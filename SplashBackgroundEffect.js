@@ -3,10 +3,10 @@
 // =============================================
 // Utility Functions
 // =============================================
-function scaleByPixelRatio(input) {
+const scaleByPixelRatio = (input) => {
     const pixelRatio = window.devicePixelRatio || 1;
     return Math.floor(input * pixelRatio);
-}
+};
 
 // =============================================
 // DOM Elements and Configuration
