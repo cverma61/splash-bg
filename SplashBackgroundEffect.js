@@ -1,6 +1,14 @@
 "use strict";
 
 // =============================================
+// Utility Functions
+// =============================================
+function scaleByPixelRatio(input) {
+    const pixelRatio = window.devicePixelRatio || 1;
+    return Math.floor(input * pixelRatio);
+}
+
+// =============================================
 // DOM Elements and Configuration
 // =============================================
 const canvas = document.querySelector(".splash-canvas");
